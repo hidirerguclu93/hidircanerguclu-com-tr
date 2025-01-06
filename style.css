@@ -7,9 +7,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* f4f4f4 yerine genel arka plan rengini belirledik */
+    color: #333;
 }
 
 /* Header */
@@ -51,6 +53,12 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px; /* Eski stil uyumluluğu için eklenmiştir */
 }
 
 nav ul li a {
@@ -99,7 +107,7 @@ nav ul li a:hover {
 
 .cta-button {
     background: #0ff;
-    color: #000000;
+    color: #000;
     padding: 0.4rem 1.5rem;
     border-radius: 7px;
     text-decoration: none;
@@ -119,7 +127,7 @@ nav ul li a:hover {
 }
 
 .post {
-    background: #ffffff;
+    background: #fff;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     border-radius: 8px;
@@ -227,16 +235,16 @@ footer {
     padding: 2em 0;
     margin-top: auto;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  footer .social-icons {
+}
+
+footer .social-icons {
     margin: 1em 0;
     display: flex;
     justify-content: center;
     gap: 15px;
-  }
-  
-  footer .social-icons a {
+}
+
+footer .social-icons a {
     color: #ddd;
     text-decoration: none;
     font-size: 1.8em;
@@ -247,22 +255,55 @@ footer {
     height: 40px;
     border-radius: 50%;
     transition: all 0.3s ease;
-  }
-  
-  footer .social-icons a:hover {
+}
+
+footer .social-icons a:hover {
     color: #fff;
     background-color: #555;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 1em 0 0;
     font-size: 0.9em;
-  }
+}
 
+/* Hakkımda Section */
+.about-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content img {
+    border-radius: 50%;
+    width: 180px; /* %20 büyütüldü */
+    height: 180px; /* %20 büyütüldü */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-content h2, .about-content h3 {
+    color: #333;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    background: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
 
 /* Responsive Design */
-
-/* Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.2rem;
@@ -286,7 +327,6 @@ footer {
     }
 }
 
-/* Tablets (481px - 1024px) */
 @media (min-width: 481px) and (max-width: 1024px) {
     header h1 {
         font-size: 1.5rem;

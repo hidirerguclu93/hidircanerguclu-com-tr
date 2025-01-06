@@ -1,7 +1,7 @@
 // Galeri öğeleri ve modal elemanlarını seçiyoruz
 const galleryItems = document.querySelectorAll('.gallery-item img');
 const modal = document.querySelector('.modal');
-const modalContent = document.querySelector('.modal-content');
+const modalContent = document.querySelector('.modal-content img');
 const modalCaption = document.querySelector('.modal-caption');
 const closeModal = document.querySelector('.modal-close');
 
@@ -83,5 +83,3 @@ modal.addEventListener('click', (e) => {
         closeModalFunction();
     }
 });
-
-

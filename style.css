@@ -10,8 +10,19 @@ body {
     line-height: 1.6; /* Satır yüksekliği */
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Koyu arka plan rengi */
-    color: #e0e0e0; /* Açık metin rengi */
+    background-color: #1C1C1C; /* Siyah */
+    color: #E6E6E6; /* Gümüş Grisi */
+}
+
+/* Font Güncellemesi */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
+
+p, a, button {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -355,8 +366,29 @@ footer p {
 }
 
 .about-text:hover {
-    transform: translateY(-5px); /* Yukarı kaydırma efekti */
+   
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Gölge efekti */
+}
+
+/* Video Container */
+.video-container {
+    margin-top: 20px; /* Üst boşluk */
+    display: flex; /* Esnek kutu düzeni */
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    border-radius: 8px; /* Köşe yuvarlama */
+    overflow: hidden; /* Taşan içeriği gizler */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş süresi */
+}
+
+.video-container:hover {
+    transform: scale(1.05); /* Büyütme efekti */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Gölge efekti */
+}
+
+.video-container iframe {
+    border-radius: 8px; /* Köşe yuvarlama */
 }
 
 /* Aside Section */
@@ -554,5 +586,66 @@ article p {
 
 .image-gallery img:hover {
     transform: scale(1.05); /* Büyütme efekti */
+}
+
+/* Sayfalandırma düğmeleri için stil */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+.pagination button.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Hover Animasyonları */
+button:hover, a:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #FFD700; /* Altın ışıltı efekti */
+}
+
+/* Parallax Efekti */
+.parallax {
+    background-image: url('path/to/your/background-image.jpg');
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fade-in Efekti */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Dinamik Arka Plan */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path/to/your/dynamic-background.gif') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
 }
 

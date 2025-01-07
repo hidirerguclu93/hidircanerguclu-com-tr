@@ -83,3 +83,15 @@ modal.addEventListener('click', (e) => {
         closeModalFunction();
     }
 });
+
+// Sayfa kaydırıldıkça fade-in efekti
+document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (position < windowHeight) {
+            element.classList.add('visible');
+        }
+    });
+});

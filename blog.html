@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog - Hıdır Can Ergüçlü">
+    <title>Blog | Hıdır Can Ergüçlü</title>
+    <link rel="icon" href="dungeon-solid.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="index.html">Hıdır Can Ergüçlü</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="blog">
+            <div class="blog-posts">
+                <!-- Varsayılan olarak mitolojik hikayeler burada yüklenecek -->
+                <div id="default-content">
+                    <!-- Mitolojik hikayeler içeriği buraya yüklenecek -->
+                </div>
+                <!-- Yeni içerikler buraya eklenecek -->
+                <div id="additional-content">
+                    <article class="post">
+                        <h3>Oynadığım Oyunlar</h3>
+                        <p>Oyunlar hakkında bilgiler burada yer alacak.</p>
+                    </article>
+                    <!-- Diğer yeni içerikler buraya eklenebilir -->
+                </div>
+            </div>
+        </section>
+        <div class="pagination">
+            <!-- Sayfalandırma düğmeleri burada oluşturulacak -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="mailto:contact@hidircanerguclu.com.tr" title="E-posta" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hidirerguclu03/" title="LinkedIn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/hidirerguclu93" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/@sadececan8001" title="Youtube" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Hıdır Can Ergüçlü. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XPH4GH360"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9XPH4GH360');
+    </script>
+    <script src="script.js"></script>
+    <script src="pagination.js"></script>
+    <script>
+        // Mitolojik hikayeler içeriğini yükle
+        document.getElementById('default-content').innerHTML = `
+           <section id="blog" class="blog-posts">
+            <h2>Mitolojik Hikayeler</h2>
+            <div class="post">
+                <h3 class="special-title"><a href="arakne.html">Arachne – Gururun ve Dehanın Hikayesi</a></h3>
+                <p class="post-meta">20 Aralık 2024 | Kategori: Mitoloji</p>
+                <p>Arakne, dokuma yeteneği ile tanınan bir ölümlüydü. Tanrıça Athena ile dokuma yarışına girdi...</p>
+                <a href="arakne.html" class="read-more">Devamını Oku</a>
+            </div>
+            <div class="post">
+                <h3 class="special-title"><a href="medusa.html">Medusa – Yunan Mitolojisinin Trajik Kahramanı</a></h3>
+                <p class="post-meta">23 Aralık 2024 | Kategori: Mitoloji</p>
+                <p>Medusa, Yunan mitolojisinin en ilginç ve hüzünlü karakterlerinden biridir...</p>
+                <a href="medusa.html" class="read-more">Devamını Oku</a>
+            </div>
+            <div class="post">
+                <h3 class="special-title"><a href="orpheus.html">Orpheus ve Eurydice – Aşkın ve Müziğin Sonsuz Yolculuğu</a></h3>
+                <p class="post-meta">23 Aralık 2024  | Kategori: Mitoloji</p>
+                <p>Yunan mitolojisinde Orpheus, sadece olağanüstü bir müzisyen değil...</p>
+                <a href="orpheus.html" class="read-more">Devamını Oku</a>
+            </div>
+            <div class="post">
+                <h3 class="special-title"><a href="moirae.html">The Fates (Moirae) – Kaderin Üç Kız Kardeşi</a></h3>
+                <p class="post-meta">23 Aralık 2024  | Kategori: Mitoloji</p>
+                <p>Yunan mitolojisinin belki de en korkutucu ama bir o kadar da etkileyici figürlerinden üç kız kardeş...</p>
+                <a href="moirae.html" class="read-more">Devamını Oku</a>
+            </div>
+        </section>
+        `;
+    </script>
+</body>
+
+</html>

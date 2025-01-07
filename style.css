@@ -6,23 +6,24 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif; /* Klasik font */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* f4f4f4 yerine genel arka plan rengini belirledik */
-    color: #333;
+    background-color: #1a1a1a; /* Koyu arka plan rengi */
+    color: #e0e0e0; /* Açık metin rengi */
 }
 
 /* Header */
 header {
     background: #333;
-    color: #fff;
+    color: #ffd700; /* Altın rengi metin */
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 10;
     width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölge efekti */
 }
 
 .header-container {
@@ -36,6 +37,7 @@ header {
 header h1 {
     font-size: 1.8rem;
     margin: 0;
+    text-shadow: 2px 2px 5px #000000; /* Gölge efekti */
 }
 
 header h1 a {
@@ -45,7 +47,7 @@ header h1 a {
 }
 
 header h1 a:hover {
-    color: rgb(63, 241, 254);
+    color: #ff4500; /* Parlak turuncu */
 }
 
 /* Navigation */
@@ -62,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffd700; /* Altın rengi bağlantılar */
     font-size: 1rem;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -70,7 +72,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0ff;
+    color: #ff4500; /* Parlak turuncu */
 }
 
 /* Hero Section */
@@ -103,10 +105,11 @@ nav ul li a:hover {
 #hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px #000000; /* Gölge efekti */
 }
 
 .cta-button {
-    background: #0ff;
+    background: #ff4500; /* Parlak turuncu */
     color: #000;
     padding: 0.4rem 1.5rem;
     border-radius: 7px;
@@ -116,7 +119,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #fff;
+    background: #ffd700; /* Altın rengi */
 }
 
 /* Blog Section */
@@ -127,16 +130,18 @@ nav ul li a:hover {
 }
 
 .post {
-    background: #fff;
+    background: #333; /* Koyu arka plan */
+    color: #e0e0e0; /* Açık metin rengi */
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölge efekti */
 }
 
 .post h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: #ffd700; /* Altın rengi başlıklar */
 }
 
 .post-meta {
@@ -146,7 +151,7 @@ nav ul li a:hover {
 }
 
 .read-more {
-    color: #0ff;
+    color: #ff4500; /* Parlak turuncu */
     text-decoration: none;
 }
 
@@ -230,11 +235,13 @@ nav ul li a:hover {
 /* Footer */
 footer {
     background-color: #222;
-    color: #ececec;
+    color: #ffd700; /* Altın rengi metin */
     text-align: center;
     padding: 2em 0;
     margin-top: auto;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    font-size: 0.8em; /* Footer yazı boyutunu küçült */
+    padding: 10px; /* Footer iç boşluğunu ayarla */
 }
 
 footer .social-icons {
@@ -245,9 +252,9 @@ footer .social-icons {
 }
 
 footer .social-icons a {
-    color: #ddd;
+    color: #ffd700; /* Altın rengi simgeler */
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.2em; /* İkon simgelerinin boyutunu küçült */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,11 +262,16 @@ footer .social-icons a {
     height: 40px;
     border-radius: 50%;
     transition: all 0.3s ease;
+    margin: 0 5px; /* İkonlar arasındaki boşluğu ayarla */
 }
 
 footer .social-icons a:hover {
-    color: #fff;
+    color: #ff4500; /* Parlak turuncu */
     background-color: #555;
+}
+
+footer .social-icons a i {
+    font-size: 1.5em; /* Simgelerin boyutunu ayarlayın */
 }
 
 footer p {
@@ -269,10 +281,11 @@ footer p {
 
 /* Hakkımda Section */
 .about-content {
-    background-color: #fff;
+    background-color: #333; /* Koyu arka plan */
+    color: #e0e0e0; /* Açık metin rengi */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölge efekti */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,10 +293,10 @@ footer p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-content:hover {
+/* .about-content:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+} */
 
 .about-content img {
     border-radius: 50%;
@@ -299,7 +312,7 @@ footer p {
 }
 
 .about-content h2, .about-content h3 {
-    color: #333;
+    color: #ffd700; /* Altın rengi başlıklar */
 }
 
 .about-content ul {
@@ -308,7 +321,7 @@ footer p {
 }
 
 .about-content ul li {
-    background: #e2e2e2;
+    background: #444; /* Koyu arka plan */
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
@@ -316,15 +329,16 @@ footer p {
 }
 
 .about-content ul li:hover {
-    background: #d1d1d1;
+    background: #555; /* Daha koyu arka plan */
 }
 
 /* Hakkımda Metin Kutusu */
 .about-text {
-    background-color: #f4f4f4;
+    background-color: #333; /* Koyu arka plan */
+    color: #e0e0e0; /* Açık metin rengi */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölge efekti */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
     text-align: left; /* Yazıları sola hizalayalım */
@@ -332,7 +346,68 @@ footer p {
 
 .about-text:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Gölge efekti */
+}
+
+/* Aside Section */
+aside {
+    background-color: #333; /* Koyu arka plan */
+    color: #e0e0e0; /* Açık metin rengi */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    margin: 20px 0;
+    position: absolute;
+    top: 100px; /* Header'ın altında yer alması için */
+    right: 20px; /* Sağ tarafa hizalama */
+    width: 250px; /* Genişlik */
+}
+
+aside h3 {
+    color: #ffd700; /* Altın rengi başlık */
+    text-shadow: 2px 2px 5px #000000; /* Gölge efekti */
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: #ff4500; /* Parlak turuncu bağlantılar */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+aside ul li a:hover {
+    color: #ffd700; /* Altın rengi */
+}
+
+/* Article Section */
+article {
+    background-color: #444; /* Koyu arka plan */
+    color: #e0e0e0; /* Açık metin rengi */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    margin: 20px 0;
+    max-width: 800px; /* Genişlik */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h2 {
+    color: #ffd700; /* Altın rengi başlık */
+    text-shadow: 2px 2px 5px #000000; /* Gölge efekti */
+}
+
+article p {
+    font-size: 1.1rem; /* Yazı boyutu */
+    line-height: 1.8; /* Satır yüksekliği */
 }
 
 /* Responsive Design */
@@ -357,6 +432,17 @@ footer p {
     .post {
         padding: 0.8rem;
     }
+
+    aside {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    article {
+        padding: 10px;
+        font-size: 1rem; /* Mobil cihazlar için yazı boyutunu küçült */
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -375,5 +461,44 @@ footer p {
     .gallery-item {
         width: 45%;
     }
+
+    aside {
+        position: static;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    article {
+        padding: 15px;
+        font-size: 1.05rem; /* Tabletler için yazı boyutunu ayarla */
+    }
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center; /* Metin ortalama */
+}
+
+.image-gallery .column {
+    flex: 1;
+    max-width: 30%; /* Resimleri biraz daha küçük yapmak için genişliği azaltın */
+    display: flex;
+    justify-content: center; /* Görselleri ortala */
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölge efekti */
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
 }
 

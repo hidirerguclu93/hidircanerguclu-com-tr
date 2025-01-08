@@ -212,6 +212,12 @@ nav ul li a:hover {
     transform: scale(1.05); /* Büyütme efekti */
 }
 
+.gallery-item div {
+    color: #cccccc; /* Grimsi renk */
+    font-size: 1rem; /* Yazı boyutu */
+    margin-top: 10px; /* Üst boşluk */
+}
+
 /* Modal */
 .modal {
     display: none; /* Görünmez */
@@ -571,7 +577,7 @@ article p {
 
 .image-gallery .column {
     flex: 1; /* Esnek kutu düzeni */
-    max-width: 30%; /* Resimleri biraz daha küçük yapmak için genişliği azaltın */
+    max-width: 40%; /* Resimleri biraz daha küçük yapmak için genişliği azaltın */
     display: flex; /* Esnek kutu düzeni */
     justify-content: center; /* Görselleri ortala */
 }
